@@ -5,7 +5,7 @@ def oxford_comma(array)
   else
     new_string << array.join(", ")
     length_from_end = array.length - array[last].length
-    new_string.insert(, "and ")
+    new_string.insert(length_from_end, "and ")
   end
   new_string
 end
