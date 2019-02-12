@@ -4,7 +4,8 @@ def oxford_comma(array)
     new_string << array.join(" and ")
   else
     new_string << array.join(", ")
-    new_string.insert(array.last, "and ")
+    last_length = array[-1].length
+    new_string.insert(last_length, "and ")
   end
   new_string
 end
